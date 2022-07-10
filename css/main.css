@@ -482,28 +482,42 @@ summary {
 
 /*-------------------Hero--------------------*/
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 1600px;
+  width: 100%;
   margin: 0 auto;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero-box__titel {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary-text-color);
-  max-width: 696px;
+  max-width: 360px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .hero-box__titel {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+    margin-bottom: 30px;
+  }
 }
 
 /*-------------------feature (функции)--------------------*/
@@ -703,7 +717,7 @@ summary {
 /*-----------------clients section---------------*/
 .clients__title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
@@ -713,10 +727,8 @@ summary {
 @media screen and (min-width: 1200px) {
   .clients__title {
     margin-bottom: 50px;
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
-    letter-spacing: 0.03em;
   }
 }
 

@@ -1,5 +1,9 @@
 .study {
-  padding-top: 0px;
+  display: none;
+  @include desktop{
+    display: flex;
+    padding-top: 0px;
+  }
 }
 
 .study__list {

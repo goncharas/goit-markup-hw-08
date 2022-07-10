@@ -555,7 +555,13 @@ summary {
 
 /*-------------What are we doing (study)------------*/
 .study {
-  padding-top: 0px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .study {
+    display: flex;
+    padding-top: 0px;
+  }
 }
 
 .study__list {
@@ -698,27 +704,44 @@ summary {
 .clients__title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 0.85;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--title-text-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
 }
 
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .clients__item {
-  margin-left: 30px;
+  width: calc((100% - 30px) / 2);
 }
-
-.clients__item:first-child {
-  margin-left: 0;
+@media screen and (min-width: 768px) {
+  .clients__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 .clients__link {
-  width: 170px;
+  width: 100%;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;

@@ -5,12 +5,25 @@
 }
 
 .footer__box {
-  /*display: flex;
-  align-items: baseline;*/
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+
+@include tablet{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+@include desktop{
+    display: flex;
+    align-items: baseline;
+    text-align: left;
+}
 }
 
 .fotter__navigation{
-  /*display: inline-block;*/
   margin-bottom: 60px;
 }
 
@@ -19,9 +32,15 @@
 }
 .footer__item{
   text-align: center;
+  @include desktop {
+  text-align: left;
+}
 }
 .footer__item:not(:last-child) {
   margin-bottom: 8px;
+  @include desktop{
+     margin-bottom: 9px;
+  }
 }
 
 /*-------------------Footer logo--------------------*/
@@ -31,15 +50,19 @@
   font-family: 'Raleway', sans-serif;
   @include fonts(700, 24px, 1.17, 0.03em);
   text-decoration: none;
-  display: block;
-  text-align: center;
+  @include desktop{
+    @include fonts(null, 26px, 1.19, null);
+  }
 }
 
 .footer__accent {
   font-family: 'Raleway';
   font-style: normal;
-  @include fonts(700, 26px, 1.19, 0.03em);
+  @include fonts(700, 24px, 1.19, 0.03em);
   color: var(--secondary-text-color);
+   @include desktop{
+    @include fonts(null, 26px, 1.19, null);
+  }
 }
 
 /*-------------------Footer navigation--------------------*/
@@ -70,16 +93,16 @@
 
 .social-conect {
   margin-bottom: 60px;
-
-  /*display: inline-block;
-  margin-left: 70px;*/
+@include desktop{
+  display: inline-block;
+  margin-left: 70px;
+}
 }
 
 .social-conect__titel {
   @include fonts(700, 14px, 1.14, 0.03em);
   text-transform: uppercase;
   color: var(--secondary-text-color);
-  text-align: center;
 }
 
 .social-conect__list {
@@ -119,6 +142,11 @@
 
 .mailing {
   margin-left: auto;
+  margin-right: auto;
+  @include desktop{
+    margin-right: 0;
+    width: 570px;
+  }
 }
 
 .mailing__tilel {
@@ -126,11 +154,13 @@
   text-transform: uppercase;
   color: var(--secondary-text-color);
   margin-bottom: 20px;
-  text-align: center;
 }
 
 .mail__form {
-  /*@extend %aling-list;*/
+  @include desktop {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .mail__name {
@@ -146,6 +176,13 @@
   transition: var(--o-transform-border);
   outline: transparent;
    margin-bottom: 20px;
+   @include tablet{
+    width: 450px;
+   }
+   @include desktop{
+    margin-bottom: 0;
+    width: 100%;
+   }
 
   &:hover, &:focus {
     border: 1px solid var(--accent-color);

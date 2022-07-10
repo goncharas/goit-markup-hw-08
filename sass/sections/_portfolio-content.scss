@@ -1,0 +1,56 @@
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.content__card {
+  position: relative;
+  overflow: hidden;
+}
+
+.content__link {
+  box-shadow: none;
+  transition: var(--o-transform-box-shadow);
+
+  &:hover .content__text, &:focus .content__text {
+    transform: translateY(0);
+  }
+
+  &:hover, &:focus {
+    display: block;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.content__text {
+  position: absolute;
+  top: 0;
+  @include fonts(null, 18px, 1.56, 0.03em);
+  color: var(--secondary-text-color);
+  padding: 63px 24px;
+  height: 101%;
+  transform: translateY(100%);
+  overflow: auto;
+  transition: var(--o-transform);
+  background-color: var(--top-background);
+}
+
+.content__pre-card {
+  background: var(--primary-background-color);
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  padding: 20px 24px;
+}
+
+.content__titel {
+  @include fonts(700, 18px, 2, 0.06em);
+  color: var(--title-text-color);
+  margin-bottom: 4px;
+}
+
+.content__text--filtered {
+   @include fonts(null, 16px, 1.87, 0.03em);
+  color: var(--primary-text-color);
+}

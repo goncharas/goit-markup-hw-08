@@ -1,0 +1,51 @@
+@import './utils/variables';
+@import './base/reset';
+@import './base/modern-normalize';
+
+
+@import './components/container';
+@import './utils/hidden';
+@import './utils/mixins';
+@import './utils/placeholders';
+@import './components/button';
+
+/*----------------------Header---------------------*/
+
+@import './sections/header';
+
+/*-------------------Hero--------------------*/
+
+@import './sections/hero';
+
+/*-------------------feature (функции)--------------------*/
+
+@import './sections/feature';
+
+/*-------------What are we doing (study)------------*/
+
+@import './sections/study';
+
+/*---------------------Our team (team)----------------------*/
+
+@import './sections/team';
+
+/*-----------------clients section---------------*/
+
+@import './sections/clients';
+
+/*-------------------Footer--------------------*/
+
+@import'./sections/footer';
+
+/*----------------- Portfolio-----------------------*/
+/*-------------------- button-----------------------*/
+
+@import './components/portfolio-btns';
+
+/*--------------------Content----------------------*/
+
+@import './sections/portfolio-content';
+
+/*--------------modal window------------------*/
+
+@import './sections/modal';

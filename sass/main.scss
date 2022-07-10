@@ -2,10 +2,9 @@
 @import './base/reset';
 @import './base/modern-normalize';
 
-
+@import './utils/mixins';
 @import './components/container';
 @import './utils/hidden';
-@import './utils/mixins';
 @import './utils/placeholders';
 @import './components/button';
 

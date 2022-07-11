@@ -13,8 +13,8 @@
 }
 
 .modal {
-  width: 528px;
-  min-height: 581px;
+  max-width: 318px;
+  min-height: 609px;
   background-color: var(--primary-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -24,6 +24,21 @@
   transform: translate(-50%, -50%) scale(1) rotate(0);
   transition: transform 500ms ease-out;
   padding: 40px;
+
+  @include mobile{
+    min-width: 450px;
+    min-height: 609px;
+  }
+
+  @include tablet{
+    min-width: 450px;
+    min-height: 609px;
+  }
+
+  @include desktop{
+    min-width: 528px;
+    min-height: 581px;
+  }
 }
 
 .close-btn {
@@ -47,10 +62,13 @@
 }
 
 .modal__titel {
-  @include fonts(700, 20px, 1.15, 0.03em);
+  @include fonts(700, 20px, 1.5, 0.03em);
   text-align: center;
   color: #212121;
   margin-bottom: 12px;
+  @include desktop{
+    @include fonts(null, null, 1.15, null);
+  }
 }
 
 .modal__field {
@@ -128,10 +146,13 @@
 }
 
 .checkbox__agreement {
-  @include fonts(null, 14px, 1.71, 0.03em);
+  @include fonts(null, 12px, 1.17, 0.03em);
   color: var(--primary-text-color);
   @extend %aling-list;
   justify-content: center;
+  @include desktop{
+    @include fonts(null, 14px, 1.71, null);
+  }
 
   &:hover, &:focus {
     cursor: pointer;
@@ -190,7 +211,10 @@
 }*/
 
 .agreement__link {
-  @include fonts(null, 14px, 1.71, 0.03em);
+  @include fonts(null, 12px, 1.17, 0.03em);
   text-decoration-line: underline;
   color: var(--accent-color);
+  @include desktop{
+    @include fonts(null, 14px, 1.71, null);
+  }
 }

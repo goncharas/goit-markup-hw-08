@@ -531,6 +531,28 @@ summary {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .contacts__item:first-child {
+    padding-top: 21px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__item:first-child {
+    padding-top: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__item:last-child {
+    padding-bottom: 21px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__item:last-child {
+    padding-bottom: 0;
+  }
+}
+
 /*-------------------Hero--------------------*/
 .hero {
   padding-top: 118px;
@@ -1067,12 +1089,21 @@ summary {
 /*-------------------- button-----------------------*/
 .filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 40px;
 }
-
-.filter__list:not(:last-child) {
-  margin-right: 8px;
+@media screen and (min-width: 768px) {
+  .filter {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
 .filter__button {
@@ -1102,6 +1133,20 @@ summary {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+}
+
+.content__list {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .content__list {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .content__list {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .content__card {

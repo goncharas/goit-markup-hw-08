@@ -130,3 +130,19 @@
      margin-right: 50px;
   }
 }
+.contacts__item:first-child{
+  @include tablet{
+    padding-top: 21px;
+  }
+  @include desktop{
+    padding-top: 0;
+  }
+}
+.contacts__item:last-child{
+  @include tablet{
+    padding-bottom: 21px;
+  }
+  @include desktop{
+    padding-bottom: 0;
+  }
+}

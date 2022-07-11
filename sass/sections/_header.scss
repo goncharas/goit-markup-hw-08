@@ -11,11 +11,21 @@
 .logo {
   color: var(--accent-color);
   font-family: 'Raleway', sans-serif;
-  @include fonts(700, 26px, 1.19, 0.03em);
+  @include fonts(700, 24px, 1.17, 0.03em);
   text-decoration: none;
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @include tablet{
+    margin-right: 88px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  @include desktop{
+    @include fonts(700, 26px, 1.19, 0.03em);
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 .accent {
@@ -25,7 +35,14 @@
 /*-------------------Header navigation--------------------*/
 
 .navigation {
-  display: flex;
+  display: none;
+  @include tablet{
+    display: flex;
+  }
+  @include desktop{
+    display: flex;
+  }
+  
 }
 
 .navigation__item:not(:last-child) {
@@ -76,17 +93,28 @@
 /*-------------------Heder contact--------------------*/
 
 .contacts {
+    display: none;
+
+  @include tablet{
+    display: block;
+    margin-left: auto;
+  }
+  @include desktop{
   display: flex;
   margin-left: auto;
+  }
 }
 
 .contacts__link {
-  @include fonts(500, 14px, 1.14, 0.02em);
+  @include fonts(500, 12px, 1.17, 0.02em);
   color: var(--primary-text-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
   @extend %aling-list;
   transition: var(--o-trasform-color);
+  @include desktop{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    @include fonts(null, 14px, 1.14, null);
+  }
 
   &:hover, &:focus {
     color: var(--accent-color);
@@ -95,5 +123,10 @@
 }
 
 .contacts__item:not(:last-child) {
-  margin-right: 50px;
+  @include tablet{
+    margin-bottom: 10px;
+  }
+  @include desktop{
+     margin-right: 50px;
+  }
 }

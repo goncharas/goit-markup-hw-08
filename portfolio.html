@@ -10,7 +10,7 @@
             href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
             rel="stylesheet"
         />
-    
+
         <link rel="stylesheet" href="./css/main.min.css" />
         <title>Portfolio</title>
     </head>
@@ -50,11 +50,7 @@
                             href="mailto:info@devstudio.com"
                             class="contacts__link link"
                         >
-                            <svg
-                                class="contacts__icon"
-                                width="16"
-                                height="12"
-                            >
+                            <svg class="contacts__icon" width="16" height="12">
                                 <use href="./img/icons.svg#icon-envelope"></use>
                             </svg>
                             info@devstudio.com
@@ -62,11 +58,7 @@
                     </li>
                     <li class="contacts__item">
                         <a href="tel:+380961111111" class="contacts__link link">
-                            <svg
-                                class="contacts__icon"
-                                width="10"
-                                height="16"
-                            >
+                            <svg class="contacts__icon" width="10" height="16">
                                 <use
                                     href="./img/icons.svg#icon-smartphone"
                                 ></use>
@@ -75,51 +67,137 @@
                         </a>
                     </li>
                 </ul>
+                <button type="button" class="header__btn">
+                    <svg class="close-btn__icon" width="24" height="16">
+                        <use href="./img/icons.svg#icon-mobile-menu"></use>
+                    </svg>
+                </button>
+                <div class="mobile is-hidden">
+                    <div class="mobile__box">
+                        <button type="button" class="mobile__close-btn">
+                            <svg
+                                class="mobile__close-btn--icon"
+                                width="18.67"
+                                height="18.67"
+                            >
+                                <use
+                                    href="./img/icons.svg#icon-close-mobile-btn"
+                                ></use>
+                            </svg>
+                        </button>
+                        <div class="mobile__box--top">
+                            <ul class="mobile__list list">
+                                <li class="mobile__item">
+                                    <a href="./index.html" class="mobile__link link">
+                                        Студия
+                                    </a>
+                                </li>
+                                <li class="mobile__item">
+                                    <a
+                                        href="./portfolio.html"
+                                        class="mobile__link link mobile__link--current"
+                                    >
+                                        Портфолио
+                                    </a>
+                                </li>
+                                <li class="mobile__item">
+                                    <a href="contact" class="mobile__link link">
+                                        Контакты
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mobile__box--bottom">
+                            <ul class="mobile__contacts list">
+                                <li class="mobile__contacts--item">
+                                    <a
+                                        href="tel:+380961111111"
+                                        class="mobile__contacts--tel link"
+                                    >
+                                        +38 096 111 11 11
+                                    </a>
+                                </li>
+                                <li class="mobile__contacts--item">
+                                    <a
+                                        href="mailto:info@devstudio.com"
+                                        class="mobile__contacts--mail link"
+                                    >
+                                        info@devstudio.com
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul class="mobile__soc list">
+                                <li class="mobile__soc--item">
+                                    <a
+                                        href="https://www.instagram.com"
+                                        target="_blank"
+                                        rel="noopener noreferrer nofollow"
+                                        class="mobile__soc--link link"
+                                        >Instagram</a
+                                    >
+                                </li>
+                                <li class="mobile__soc--item">
+                                    <a
+                                        href="https://twitter.com"
+                                        target="_blank"
+                                        rel="noopener noreferrer nofollow"
+                                        class="mobile__soc--link link"
+                                        >Twitter</a
+                                    >
+                                </li>
+                                <li class="mobile__soc--item">
+                                    <a
+                                        href="https://www.facebook.com/"
+                                        target="_blank"
+                                        rel="noopener noreferrer nofollow"
+                                        class="mobile__soc--link link"
+                                        >Facebook</a
+                                    >
+                                </li>
+                                <li class="mobile__soc--item">
+                                    <a
+                                        href="https://www.linkedin.com"
+                                        target="_blank"
+                                        rel="noopener noreferrer nofollow"
+                                        class="mobile__soc--link link"
+                                        >LinkedIn</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </header>
         <!--main-->
         <main>
             <section class="section">
-              <div class="portfolio container">
-                <h1 class="portfolio__title visually-hidden">Портфолио</h1>
+                <div class="portfolio container">
+                    <h1 class="portfolio__title visually-hidden">Портфолио</h1>
                     <ul class="filter list">
                         <li class="filter__list">
-                            <button
-                                type="button"
-                                class="filter__button"
-                            >
+                            <button type="button" class="filter__button">
                                 Все
                             </button>
                         </li>
                         <li class="filter__list">
-                            <button
-                                type="button"
-                                class="filter__button"
-                            >
+                            <button type="button" class="filter__button">
                                 Веб-сайты
                             </button>
                         </li>
                         <li class="filter__list">
-                            <button
-                                type="button"
-                                class="filter__button"
-                            >
+                            <button type="button" class="filter__button">
                                 Приложения
                             </button>
                         </li>
                         <li class="filter__list">
-                            <button
-                                type="button"
-                                class="filter__button"
-                            >
+                            <button type="button" class="filter__button">
                                 Дизайн
                             </button>
                         </li>
                         <li class="filter__list">
-                            <button
-                                type="button"
-                                class="filter__button"
-                            >
+                            <button type="button" class="filter__button">
                                 Маркетинг
                             </button>
                         </li>
@@ -143,7 +221,9 @@
                                 </div>
                                 <div class="content__pre-card">
                                     <h2 class="content__titel">Технокряк</h2>
-                                    <p class="content__text--filtered">Веб-сайт</p>
+                                    <p class="content__text--filtered">
+                                        Веб-сайт
+                                    </p>
                                 </div>
                             </a>
                         </li>
@@ -169,7 +249,9 @@
                                             New Orlean vs Golden Star</span
                                         >
                                     </h2>
-                                    <p class="content__text--filtered">Дизайн</p>
+                                    <p class="content__text--filtered">
+                                        Дизайн
+                                    </p>
                                 </div>
                             </a>
                         </li>
@@ -192,7 +274,9 @@
                                     <h2 class="content__titel">
                                         Ресторан <span lang="en">Seafood</span>
                                     </h2>
-                                    <p class="content__text--filtered">Приложение</p>
+                                    <p class="content__text--filtered">
+                                        Приложение
+                                    </p>
                                 </div>
                             </a>
                         </li>
@@ -215,7 +299,9 @@
                                     <h2 class="content__titel">
                                         Проект <span lang="en">Prime</span>
                                     </h2>
-                                    <p class="content__text--filtered">Маркетинг</p>
+                                    <p class="content__text--filtered">
+                                        Маркетинг
+                                    </p>
                                 </div>
                             </a>
                         </li>
@@ -238,7 +324,9 @@
                                     <h2 class="content__titel">
                                         Проект <span lang="en">Boxes</span>
                                     </h2>
-                                    <p class="content__text--filtered">Приложение</p>
+                                    <p class="content__text--filtered">
+                                        Приложение
+                                    </p>
                                 </div>
                             </a>
                         </li>
@@ -261,7 +349,9 @@
                                     <h2 lang="en" class="content__titel">
                                         Inspiration has no Borders
                                     </h2>
-                                    <p class="content__text--filtered">Веб-сайт</p>
+                                    <p class="content__text--filtered">
+                                        Веб-сайт
+                                    </p>
                                 </div>
                             </a>
                         </li>
@@ -284,7 +374,9 @@
                                     <h2 class="content__titel">
                                         Издание <span lang="en">Edition</span>
                                     </h2>
-                                    <p class="content__text--filtered">Дизайн</p>
+                                    <p class="content__text--filtered">
+                                        Дизайн
+                                    </p>
                                 </div>
                             </a>
                         </li>
@@ -304,7 +396,9 @@
                                     <h2 class="content__titel">
                                         Проект <span lang="en">LAB</span>
                                     </h2>
-                                    <p class="content__text--filtered">Маркетинг</p>
+                                    <p class="content__text--filtered">
+                                        Маркетинг
+                                    </p>
                                 </div>
                             </a>
                         </li>
@@ -327,7 +421,9 @@
                                     <h2 lang="en" class="content__titel">
                                         Growing Business
                                     </h2>
-                                    <p class="content__text--filtered">Приложение</p>
+                                    <p class="content__text--filtered">
+                                        Приложение
+                                    </p>
                                 </div>
                             </a>
                         </li>
@@ -336,7 +432,7 @@
             </section>
         </main>
         <!--footer-->
-               <footer class="footer">
+        <footer class="footer">
             <div class="footer__box container">
                 <div class="fotter__navigation">
                     <a href="./index.html" class="footer__logo link">
@@ -441,24 +537,25 @@
                                 class="mail__name"
                                 required
                             />
-                        
-                        <button type="submit" class="button mail__btn">
-                            Подписаться
-                            <span class="mail__icon">
-                                <svg
-                                    class="mail__logo"
-                                    width="24"
-                                    height="24"
-                                >
-                                    <use
-                                        href="./img/icons.svg#icon-icon-send"
-                                    ></use></svg
-                            ></span>
-                        </button>
+
+                            <button type="submit" class="button mail__btn">
+                                Подписаться
+                                <span class="mail__icon">
+                                    <svg
+                                        class="mail__logo"
+                                        width="24"
+                                        height="24"
+                                    >
+                                        <use
+                                            href="./img/icons.svg#icon-icon-send"
+                                        ></use></svg
+                                ></span>
+                            </button>
                         </form>
                     </div>
                 </div>
             </div>
         </footer>
+        <script src="./js/menu.js"></script>
     </body>
 </html>

@@ -1,0 +1,134 @@
+.header__btn {
+    width: 40px;
+    height: 40px;
+    border-width: 0px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    padding: 12px 8px;
+    fill: #000000;
+    transition: var(--o-transform-fill);
+
+    padding: 120px, 8px;
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+        cursor: pointer;
+    }
+    @include tablet {
+        display: none;
+    }
+    @include desktop {
+        display: none;
+    }
+}
+
+.mobile {
+    position: fixed;
+    z-index: 2;
+    background-color: var(--primary-background-color);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    transition: all 500ms ease;
+}
+
+.mobile__box {
+    width: 100%;
+    margin: 0px auto;
+    padding-right: 15px;
+    padding-left: 40px;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+}
+
+.mobile__close-btn {
+    width: 40px;
+    height: 40px;
+    border-width: 0px;
+    background-color: transparent;
+    @extend %aling-list;
+    justify-content: center;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    fill: #000000;
+    transition: var(--o-transform-fill);
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+        cursor: pointer;
+    }
+}
+
+.mobile__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.mobile__link {
+    @include fonts(500, 40px, 1.18, 0.02em);
+    color: var(--title-text-color);
+    transition: var(--o-trasform-color);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        cursor: pointer;
+    }
+}
+
+.mobile__link--current {
+    color: var(--accent-color);
+    cursor: pointer;
+}
+
+.mobile__contacts--item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.mobile__contacts--item:last-child {
+    margin-bottom: 64px;
+}
+
+.mobile__contacts--tel {
+    @include fonts(500, 34px, 1.18, 0.02em);
+    color: var(--accent-color);
+    &:hover,
+    &:focus {
+        cursor: pointer;
+    }
+}
+.mobile__contacts--mail {
+    @include fonts(500, 24px, 1.17, 0.02em);
+    color: var(--primary-text-color);
+    &:hover,
+    &:focus {
+        cursor: pointer;
+    }
+}
+
+.mobile__soc{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.mobile__soc--item:not(:last-child) {
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid rgba(33,33,33,0.2);
+ }
+
+.mobile__soc--link{
+     @include fonts(500, 18px, 1.22, 0.02em);
+     color: var(--accent-color);
+}

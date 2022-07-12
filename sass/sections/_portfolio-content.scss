@@ -1,3 +1,14 @@
+.page{
+   padding: 120px 0px 60px 0px;
+
+    @include tablet {
+        padding: 140px 0px 60px 0px;
+    }
+    
+     @include desktop {
+        padding: 174px 0px 94px 0px;
+    }
+}
 .content{
   display: flex;
   flex-wrap: wrap;
@@ -19,6 +30,9 @@
 }
 
 .content__link {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   box-shadow: none;
   transition: var(--o-transform-box-shadow);
 
@@ -51,6 +65,7 @@
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   padding: 20px 24px;
+  flex-grow: 1;
 }
 
 .content__titel {

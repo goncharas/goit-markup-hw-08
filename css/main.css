@@ -384,7 +384,17 @@ summary {
 
 /*----------------------Header---------------------*/
 .header {
-  border: 1px solid #ececec;
+  background-color: var(--primary-background-color);
+  width: 100vw;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #ececec;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
 }
 
 /*-------------------Header logo--------------------*/
@@ -706,6 +716,7 @@ summary {
   background-size: cover;
   width: 100%;
   margin: 0 auto;
+  margin-top: 60px;
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
@@ -715,11 +726,13 @@ summary {
 @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-tablet.jpg);
+    margin-top: 80px;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-tablet-2x.jpg);
+    margin-top: 80px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1293,6 +1306,20 @@ summary {
 }
 
 /*--------------------Content----------------------*/
+.page {
+  padding: 120px 0px 60px 0px;
+}
+@media screen and (min-width: 768px) {
+  .page {
+    padding: 140px 0px 60px 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page {
+    padding: 174px 0px 94px 0px;
+  }
+}
+
 .content {
   display: flex;
   flex-wrap: wrap;
@@ -1319,6 +1346,9 @@ summary {
 }
 
 .content__link {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   box-shadow: none;
   transition: var(--o-transform-box-shadow);
 }
@@ -1351,6 +1381,7 @@ summary {
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   padding: 20px 24px;
+  flex-grow: 1;
 }
 
 .content__titel {

@@ -11,6 +11,7 @@
     background-size: cover;
     width: 100%;
     margin: 0 auto;
+    margin-top: 60px;
     @include retina {
         background-image: linear-gradient(
                 rgba(47, 48, 58, 0.4),
@@ -30,9 +31,11 @@
                 rgba(47, 48, 58, 0.4)
             ),
             url(../img/hero-tablet-2x.jpg);
+            margin-top: 80px;
         }
+            margin-top: 80px;
     }
-    @include desktop {
+       @include desktop {
         padding-top: 200px;
         padding-bottom: 200px;
         background-image: linear-gradient(

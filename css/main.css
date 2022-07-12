@@ -384,17 +384,7 @@ summary {
 
 /*----------------------Header---------------------*/
 .header {
-  background-color: var(--primary-background-color);
-  width: 100vw;
-  border-width: 0 0 1px 0;
-  border-style: solid;
-  border-color: #ececec;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
+  border: 1px solid #ececec;
 }
 
 /*-------------------Header logo--------------------*/
@@ -538,6 +528,7 @@ summary {
 @media screen and (min-width: 1200px) {
   .contacts__item:not(:last-child) {
     margin-right: 50px;
+    margin-bottom: 0;
   }
 }
 
@@ -716,7 +707,6 @@ summary {
   background-size: cover;
   width: 100%;
   margin: 0 auto;
-  margin-top: 60px;
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
@@ -726,19 +716,18 @@ summary {
 @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-tablet.jpg);
-    margin-top: 80px;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-tablet-2x.jpg);
-    margin-top: 80px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
+    max-width: 1600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-desktop.jpg);
   }
 }
@@ -866,7 +855,13 @@ summary {
 
 /*---------------------Our team (team)----------------------*/
 .team {
+  margin: 0 auto;
   background-color: var(--tertiary-background-color);
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    max-width: 1600px;
+  }
 }
 
 .team__title {
@@ -1306,20 +1301,6 @@ summary {
 }
 
 /*--------------------Content----------------------*/
-.page {
-  padding: 120px 0px 60px 0px;
-}
-@media screen and (min-width: 768px) {
-  .page {
-    padding: 140px 0px 60px 0px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .page {
-    padding: 174px 0px 94px 0px;
-  }
-}
-
 .content {
   display: flex;
   flex-wrap: wrap;

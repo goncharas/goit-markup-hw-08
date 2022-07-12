@@ -1,5 +1,9 @@
 .team {
+  margin: 0 auto;
   background-color: var(--tertiary-background-color);
+  @include desktop{
+  max-width: 1600px;
+  }
 }
 
 .team__title {

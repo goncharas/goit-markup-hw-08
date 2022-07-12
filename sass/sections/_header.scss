@@ -1,15 +1,5 @@
 .header {
-    background-color: var(--primary-background-color);
-    width: 100vw;
-    border-width: 0 0 1px 0;
-    border-style: solid;
-    border-color: #ececec;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
+   border: 1px solid #ececec;
 }
 
 .box, .nav {
@@ -138,6 +128,7 @@
   }
   @include desktop{
      margin-right: 50px;
+     margin-bottom: 0;
   }
 }
 .contacts__item:first-child{

@@ -37,6 +37,13 @@
     padding-top: 48px;
     padding-bottom: 48px;
     transition: all 500ms ease;
+    @include tablet{
+        display: none;
+    }
+    @include desktop{
+        display: none;
+    }
+    max-width: 767px;
 }
 
 .mobile__box {

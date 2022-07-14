@@ -30,6 +30,13 @@
   text-transform: uppercase;
   color: var(--title-text-color);
   margin-bottom: 10px;
+  text-align: center;
+  @include tablet{
+    text-align: left;
+  }
+  @include desktop{
+    text-align: left;
+  }
 }
 
 .feature__text {

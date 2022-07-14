@@ -401,7 +401,6 @@ summary {
 }
 @media screen and (min-width: 768px) {
   .logo {
-    margin-right: 88px;
     padding-top: 26px;
     padding-bottom: 26px;
   }
@@ -412,7 +411,6 @@ summary {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    margin-right: 93px;
     padding-top: 24px;
     padding-bottom: 25px;
   }
@@ -429,11 +427,13 @@ summary {
 @media screen and (min-width: 768px) {
   .navigation {
     display: flex;
+    margin-left: 88px;
   }
 }
 @media screen and (min-width: 1200px) {
   .navigation {
     display: flex;
+    margin-left: 93px;
   }
 }
 
@@ -509,8 +509,6 @@ summary {
 }
 @media screen and (min-width: 1200px) {
   .contacts__link {
-    padding-top: 32px;
-    padding-bottom: 32px;
     font-size: 14px;
     line-height: 1.14;
   }
@@ -518,6 +516,30 @@ summary {
 .contacts__link:hover, .contacts__link:focus {
   color: var(--accent-color);
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__mail {
+    padding-top: 21px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__mail {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__phone {
+    padding-bottom: 21px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__phone {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -529,28 +551,6 @@ summary {
   .contacts__item:not(:last-child) {
     margin-right: 50px;
     margin-bottom: 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .contacts__item:first-child {
-    padding-top: 21px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .contacts__item:first-child {
-    padding-top: 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .contacts__item:last-child {
-    padding-bottom: 21px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .contacts__item:last-child {
-    padding-bottom: 0;
   }
 }
 
@@ -594,6 +594,17 @@ summary {
   padding-top: 48px;
   padding-bottom: 48px;
   transition: all 500ms ease;
+  max-width: 767px;
+}
+@media screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mobile {
+    display: none;
+  }
 }
 
 .mobile__box {
@@ -797,6 +808,17 @@ summary {
   text-transform: uppercase;
   color: var(--title-text-color);
   margin-bottom: 10px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .feature__pre-title {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feature__pre-title {
+    text-align: left;
+  }
 }
 
 .feature__text {
@@ -857,11 +879,6 @@ summary {
 .team {
   margin: 0 auto;
   background-color: var(--tertiary-background-color);
-}
-@media screen and (min-width: 1200px) {
-  .team {
-    max-width: 1600px;
-  }
 }
 
 .team__title {
@@ -1049,6 +1066,11 @@ summary {
 .fotter__navigation {
   margin-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .fotter__navigation {
+    margin-bottom: 0;
+  }
+}
 
 .footer__contacts {
   margin-top: 20px;
@@ -1139,6 +1161,7 @@ summary {
   .social-conect {
     display: inline-block;
     margin-left: 70px;
+    margin-bottom: 0;
   }
 }
 
@@ -1218,7 +1241,6 @@ summary {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  margin-right: 12px;
   padding: 16px 15px;
   color: var(--secondary-text-color);
   transition: var(--o-transform-border);
@@ -1232,6 +1254,7 @@ summary {
 }
 @media screen and (min-width: 1200px) {
   .mail__name {
+    margin-right: 12px;
     margin-bottom: 0;
     width: 100%;
   }

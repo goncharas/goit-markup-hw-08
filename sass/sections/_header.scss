@@ -16,13 +16,13 @@
   padding-top: 16px;
   padding-bottom: 16px;
   @include tablet{
-    margin-right: 88px;
+    // margin-right: 88px;
     padding-top: 26px;
     padding-bottom: 26px;
   }
   @include desktop{
     @include fonts(700, 26px, 1.19, 0.03em);
-    margin-right: 93px;
+    // margin-right: 93px;
     padding-top: 24px;
     padding-bottom: 25px;
   }
@@ -38,9 +38,11 @@
   display: none;
   @include tablet{
     display: flex;
+    margin-left: 88px;
   }
   @include desktop{
     display: flex;
+    margin-left: 93px;
   }
   
 }
@@ -110,9 +112,8 @@
   color: var(--primary-text-color);
   @extend %aling-list;
   transition: var(--o-trasform-color);
+ 
   @include desktop{
-    padding-top: 32px;
-    padding-bottom: 32px;
     @include fonts(null, 14px, 1.14, null);
   }
 
@@ -121,6 +122,25 @@
     cursor: pointer;
   }
 }
+.contacts__mail{
+  @include tablet{
+    padding-top: 21px;
+  }
+  @include desktop{
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+.contacts__phone{
+  @include tablet{
+    padding-bottom: 21px;
+  }
+   @include desktop{
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
 
 .contacts__item:not(:last-child) {
   @include tablet{
@@ -129,21 +149,5 @@
   @include desktop{
      margin-right: 50px;
      margin-bottom: 0;
-  }
-}
-.contacts__item:first-child{
-  @include tablet{
-    padding-top: 21px;
-  }
-  @include desktop{
-    padding-top: 0;
-  }
-}
-.contacts__item:last-child{
-  @include tablet{
-    padding-bottom: 21px;
-  }
-  @include desktop{
-    padding-bottom: 0;
   }
 }

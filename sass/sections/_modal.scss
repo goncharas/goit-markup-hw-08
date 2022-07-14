@@ -150,6 +150,7 @@
   color: var(--primary-text-color);
   @extend %aling-list;
   justify-content: center;
+  display: inline-block;
   @include desktop{
     @include fonts(null, 14px, 1.71, null);
   }
@@ -167,6 +168,7 @@
     @extend %aling-list;
     justify-content: center;
     transition: var(--o-transform-border), var(--o-transform-fill), var(--o-trasform-background);
+    display: inline-block;
   }
 }
 

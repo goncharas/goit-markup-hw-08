@@ -1563,7 +1563,6 @@ summary {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   justify-content: center;
-  display: inline-block;
 }
 @media screen and (min-width: 1200px) {
   .checkbox__agreement {
@@ -1582,7 +1581,6 @@ summary {
   margin-right: 7px;
   justify-content: center;
   transition: var(--o-transform-border), var(--o-transform-fill), var(--o-trasform-background);
-  display: inline-block;
 }
 
 .agreement__icon {
